@@ -72,13 +72,10 @@ keymap = [
 	{ on = "<Space>", run = ["toggle", "arrow 1"], desc = "Toggle the current selection state" },
 	{ on = "v", run = "toggle_all", desc = "Enter visual mode (selection mode)" },
 	{ on = "V", run = "visual_mode --unset", desc = "Enter visual mode (unset mode)" },
-	# { on = "<C-a>", run = "select_all --state=true", desc = "Select all files" },
-	# { on = "<C-r>", run = "select_all --state=none", desc = "Inverse selection of all files" },
 
 	# Find
 	{ on = "<C-p>", run = "plugin fzf", desc = "Jump to a directory or reveal a file using fzf" },
 	{ on = ["z", "o"], run = "plugin zoxide", desc = "Jump to a directory using zoxide" },
-	# { on = "f", run = "search fd", desc = "Search files by name using fd" },
 	{ on = "F", run = "search rg", desc = "Search files by content using ripgrep" },
 	{ on = "<C-s>", run = "escape --search", desc = "Cancel the ongoing search" },
 	{ on = "f", run = "filter --smart", desc = "Filter files" },
@@ -95,22 +92,12 @@ keymap = [
 	# Hidden files
 	{ on = ["z", "h"], run = "hidden toggle", desc = "Toggle the visibility of hidden files" },
 
-	# Open
-	{ on = "r", run = "open --interactive", desc = "Open selected files interactively" },
-
 	# Create
-	{ on = "T", run = "create", desc = "Create a file (ends with / for directories)" },
-	{ on = "M", run = "create --dir", desc = "Create a directory" },
-
-	# Rename
-	{ on = ["c", "w"], run = "rename --empty=all", desc = "Rename selected file(s)" },
-	{ on = "k", run = "rename --cursor=start", desc = "Rename selected file(s)" },
-	{ on = "a", run = "rename --cursor=before_ext", desc = "Rename selected file(s)" },
-	{ on = "A", run = "rename --cursor=end", desc = "Rename selected file(s)" },
+	{ on = "a", run = "create", desc = "Create a file (ends with / for directories)" },
+	{ on = ["A"], run = "create --dir", desc = "Create a directory" },
 
 	# Operation: D
 	{ on = ["d", "d"], run = "yank --cut", desc = "Yank selected files (cut)" },
-	# { on = ["d"], run = "remove", desc = "Trash selected files" },
 	{ on = ["d", "D"], run = "remove --permanently", desc = "Permanently delete selected files" },
 
 	# Operation: Y
