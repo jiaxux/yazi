@@ -103,6 +103,18 @@ preloaders = [
 	{ mime = "font/*", run = "font" },
 	{ mime = "application/vnd.ms-opentype", run = "font" },
 ]
+prepend_preloaders = [
+	# Replace magick, image, video with mediainfo
+    	{ mime = "{audio,video,image}/*", run = "mediainfo" },
+    	{ mime = "application/subrip", run = "mediainfo" },
+]
+
+prepend_previewers = [
+    	# Replace magick, image, video with mediainfo
+    	{ mime = "{audio,video,image}/*", run = "mediainfo"},
+    	{ mime = "application/subrip", run = "mediainfo" },
+]
+
 previewers = [
 	{ name = "*/", run = "folder", sync = true },
 	# Code
@@ -127,6 +139,9 @@ previewers = [
 	{ mime = "inode/x-empty", run = "empty" },
 	# Fallback
 	{ name = "*", run = "file" },
+	# Mardown
+	{ name = "*.md", run = "glow" },
+
 ]
 
 [input]
