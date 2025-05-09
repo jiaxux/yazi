@@ -4,11 +4,6 @@ rev = "8945e54"
 hash = "aef2b1a805b80cce573bb766f1459d88"
 
 [[plugin.deps]]
-use = "yazi-rs/plugins:git"
-rev = "8945e54"
-hash = "771f18427fb75fb19990ce602bb322f4"
-
-[[plugin.deps]]
 use = "llanosrocas/yaziline"
 rev = "e06c47f"
 hash = "7df84299e89ffefd4686d1e20a295c8a"
@@ -22,6 +17,11 @@ hash = "a6b78bf9af5390e3a85a6951fbb7b93"
 use = "boydaihungst/mediainfo"
 rev = "447fe95"
 hash = "dcaebc8bc261206f6b59e2c67464af5"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "864a021"
+hash = "e0ada736ea676c2bbb3ec705a49526ef"
 
 [flavor]
 deps = []
