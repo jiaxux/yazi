@@ -1,22 +1,27 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "8945e54"
-hash = "aef2b1a805b80cce573bb766f1459d88"
+rev = "e5f00e2"
+hash = "56fdabc96fc1f4d53c96eb884b02a5be"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "e5f00e2"
+hash = "37ebed215c8742eada643fc2655b65e2"
 
 [[plugin.deps]]
 use = "llanosrocas/yaziline"
-rev = "e06c47f"
-hash = "7df84299e89ffefd4686d1e20a295c8a"
+rev = "e79b067"
+hash = "f590c5b7d0730e8d6023b1b34ddf7ead"
 
 [[plugin.deps]]
 use = "Reledia/glow"
-rev = "c76bf4f"
-hash = "a6b78bf9af5390e3a85a6951fbb7b93"
+rev = "bd3eaa5"
+hash = "92b5c58159a51c567f82b618cee2b78"
 
 [[plugin.deps]]
 use = "boydaihungst/mediainfo"
-rev = "447fe95"
-hash = "dcaebc8bc261206f6b59e2c67464af5"
+rev = "b74b7b8"
+hash = "4b6ac1a6fd7ba02a945070ad39fc1999"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
